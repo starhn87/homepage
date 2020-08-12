@@ -1,0 +1,38 @@
+spring:
+#   datasource:
+#     hikari:
+#        driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+#        jdbc-url: jdbc:log4jdbc:postgresql://10.1.22.2:5432/DATA_ANALYTICS_SYSTEM?useUnicode=true&characterEncoding=utf-8
+#        username: smartcity
+#        password: smartcity
+#        connection-test-query: SELECT 1
+#   main:
+#     allow-bean-definition-overriding: true
+# spring-boot-devtool    
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: false
+
+# spring-boot-starter-actuator
+# management:
+#   endpoints:
+#     web:
+#       exposure:
+#         include: "*"
+            
+# mybatis:
+#   configuration:
+#     map-underscore-to-camel-case: true
+
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8000
+  servlet:
+    encoding:
+        charset: UTF-8
+        enabled: true
+        force: true
+
